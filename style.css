@@ -179,11 +179,12 @@ input[type="checkbox"]:checked ~ .field_comment {
 .radio__check::before {
   content: "";
   background: #3b4256;
-  width: 1px;
-  height: 1px;
-  border-radius: 50%;
   opacity: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   transform: scale(0);
+  transition: 0.2s all ease-in;
 }
 
 @media screen and (max-width: 920px) {
