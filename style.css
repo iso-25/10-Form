@@ -19,7 +19,8 @@ body {
   padding: 50px;
 }
 
-.field {
+.field,
+.checkboxes {
   display: block;
   max-width: 50%;
   margin-bottom: 20px;
@@ -108,11 +109,11 @@ input[type="checkbox"]:checked ~ .field_comment {
 }
 
 .chk__input:checked ~ .chk__check {
-    background: #3b4256;
+  background: #3b4256;
 }
 
 .chk__input {
-    display: none;
+  display: none;
 }
 
 .chk__text {
@@ -120,6 +121,7 @@ input[type="checkbox"]:checked ~ .field_comment {
   font-size: 14px;
   font-weight: 400;
   line-height: 140%;
+  margin-right: 10px;
 }
 
 .chk__check {
@@ -135,49 +137,55 @@ input[type="checkbox"]:checked ~ .field_comment {
 }
 
 .chk__check::before {
-    content: '\2713';
-    color: white;
+  content: "\2713";
+  color: white;
+  opacity: 0;
+  transform: scale(0);
 }
 
-
-
 .radio {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .radio__input:checked ~ .chk__check {
-      background: #3b4256;
-  }
-  
-  .radio__input {
-      display: none;
-  }
-  
-  .radio__text {
-    color: #3b4256;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-  }
-  
-  .radio__check {
-    width: 21px;
-    height: 21px;
-    border: 2px solid #3b4256;
-    border-radius: 4px;
-    background: transparent;
-    transition: 0.2s all ease-in;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .radio__check::before {
-      content: '\2713';
-      color: white;
-  }
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio__input:checked ~ .radio__check {
+  background: #3b4256;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__text {
+  color: #3b4256;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.radio__check {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #3b4256;
+  border-radius: 50%;
+  background: transparent;
+  transition: 0.2s all ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio__check::before {
+  content: "";
+  background: #3b4256;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+}
+
 @media screen and (max-width: 920px) {
   .field {
     max-width: 100%;
