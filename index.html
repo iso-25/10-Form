@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Форма</h1>
+    <label class="field">
+        <span class="field__text">Label
+            <span class="field__reg">*</span>
+        </span>
+        <input class="field__input" type="text" placeholder="Введіть своє ім'я">
+    </label>
+
+
+    <label class="field">
+            <input type="checkbox" id="checkbox_textarea">
+            <span class="chk__text">Відобразити поле Опис (Textarea)</span>
+        <!-- </label> -->
+        <div class="field_comment">
+            <span class="field__text">Textarea</span>
+            <textarea class="field__textarea" placeholder="Введіть опис"></textarea>
+        </div>
+</label>
+
+
+    <label class="field">
+        <span class="field__text">Select</span>
+        <select class="field__select">
+            <option value="Yelou">Жовтий</option>
+            <option value="Blue">Синій</option>
+            <option value="Green">Зелений</option>
+            <option value="Dark">Чорний</option>
+            <option value="Wiet">Білий</option>
+        </select>
+    </label>
+    <label class="field">
+        <span class="field__text">Select of several</span>
+        <select multiple class="field__select">
+            <option value="Toyota">Toyota</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Nissan">Nissan</option>
+            <option value="VolksWagen">VolksWagen</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Pageot">Pageot</option>
+            <option value="Renault">Renault</option>
+        </select>
+    </label>
+
+    <label class="chk">
+        <input class="chk__input" type="checkbox" id="checkbox_textarea">
+        <span class="chk__check"></span>
+        <span class="chk__text">Item</span>
+    </label>
+
+    <label class="chk">
+        <input class="chk__input" type="checkbox" id="checkbox_textarea">
+        <span class="chk__check"></span>
+        <span class="chk__text">Item</span>
+    </label>
+    <label class="chk">
+        <input class="chk__input" type="checkbox" id="checkbox_textarea">
+        <span class="chk__check"></span>
+        <span class="chk__text">Item</span>
+    </label>
+
+
+    <label class="radio">
+        <input class="radio__input" type="radio">
+        <span class="radio__check"></span>
+        <span class="radio__text">Стать</span>
+    </label>
+
+</body>
+
+</html>
